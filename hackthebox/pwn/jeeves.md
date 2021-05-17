@@ -1,15 +1,10 @@
 ---
-layout: post
-title: HackTheBox - Jeeves (Pwn) (Retired Challenge)
-date: 2021-04-16
-categories: HackTheBox pwn
----
-
+Title: Jeeves
+Date:   2021-04-16
 Category: Pwn
-
 Difficulty: Easy
-
 Challenge Creator: MinatoTW
+---
 
 ## Overview
 This challenge is part of Hack The Box's Intro to Binary Exploitation track and, while not particularly difficult, serves as a good introduction to practice some fundamental concepts. In this example we cover some common file analysis techniques, disassemble an executable using gdb, and perform basic byte manipulation and network programming with python 3.
