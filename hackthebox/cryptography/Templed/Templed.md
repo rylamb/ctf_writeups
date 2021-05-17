@@ -3,27 +3,27 @@ layout: post
 title: Templed
 date:   2021-02-19 13:46:56 -0600
 categories: HackTheBox crypto
----
 
-Category: Cryptography
-
+Title: Templed
+Date:   2021-02-19
+Category: Crypto
 Difficulty: Easy
-
 Challenge Creator: Xh4H
+---
 
 **Challenge Description:**&quot;I found the following message in a temple, I had the sensation that they were hiding something. Could you help me discover what it was?&quot;
 
 Downloading the archive and unzipping gives the Scroll.png seen below.
 
-![image1]({{site.baseurl}}/writeups/hackthebox/cryptography/Templed/images/Picture1.png)
+![image1](./images/Picture1.png)
 
 In the book &quot;The Ciphers of the Monks: A Forgotten Number-notation of the Middle Ages&quot; by David A. King, the author describes the Cistercian numeral system which looks like the cypher in Scroll.png.
 
-![image2]({{site.baseurl}}/writeups/hackthebox/cryptography/Templed/images/Picture2.png)
+![image2](./images/Picture2.png)
 
 We can break the cypher by combining symbols from the Cisterian numeral system seen above to create the symbols from our Scroll.png file. This means each symbol represents a numeric value.
 
-![image3]({{site.baseurl}}/writeups/hackthebox/cryptography/Templed/images/Picture4.png)
+![image3](./images/Picture4.png)
 
 Continue this conversion for each symbol. Since ASCII uses decimal values to represent human readable symbols, we can write a script to convert the message.
 
