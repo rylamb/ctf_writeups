@@ -1,4 +1,4 @@
-# HackTheBox Writeups
+# Hack The Box
 ## Binary Exploitation (Pwn)
 * Easy
   * [Jeeves - 2021-04-16](./hackthebox/pwn/jeeves.md)
