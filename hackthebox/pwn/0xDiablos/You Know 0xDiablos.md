@@ -6,13 +6,13 @@ Difficulty: Easy
 Challenge Creator: RET2pwn
 ---
 
-**Analysis of Protections**
+##Analysis of Protections
 
 ![image1](./images/Picture2.png)
 
 After downloading the binary, running checksec will show what protections were used with this file. **Stack canaries** are a value written into the stack that can be checked before a function returns to determine if a stack smashing attempt has occurred. **NX (no-execute)** sets a bit that marks certain areas of memory as non-executable to prevent code being maliciously written into the stack from being executed erroneously. **PIE (Position Independent Executable)** loads a binary and all dependencies into random locations within virtual memory each time the application is executed, making it difficult to pinpoint targets within an application. In this case, none of these protections are in place.
 
-**Running The Executable**
+##Running The Executable
 
 ![image2](./images/Picture3.png)
 
@@ -20,7 +20,7 @@ Running the executable gives the prompt &quot;You know who are 0xDiablos:&quot; 
 
 ![image3](./images/Picture4.png)
 
-**Decompiling With GDB**
+##Decompiling With GDB
 
 Running the file with GDB and dumping information about the functions may give insight about how the application is built. This file contains &#39;main&#39;, &#39;vuln&#39;, &#39;flag&#39;, and &#39;gets&#39;, the latter being an unsafe function and likely the source of the overflow vulnerability.
 
@@ -38,7 +38,7 @@ But what about the &#39;flag&#39; function? It never seems to be called anywhere
 
 ![image7](./images/Picture8.png)
 
-**Recap**
+##Recap
 
 Based on the analysis of the executable, here is what can be deduced:
 
@@ -46,7 +46,7 @@ Based on the analysis of the executable, here is what can be deduced:
 2. &#39;vuln&#39; uses the unsafe function &#39;gets&#39; to read user input to a buffer. This can be exploited.
 3. &#39;flag&#39; is never called directly, but it reads from a file, takes two parameters that are compared to &quot;0xdeadbeef&quot; and &quot;0xc0ded00d&quot;, and prints something out.
 
-**Solution**
+##Solution
 
 The full writeup is locked with the flag. [See the full writeup][writeup_url]
 
