@@ -1,5 +1,5 @@
 ---
-Title: BabyRE
+Title: Baby RE
 Date:   2021-02-23
 Category: Reversing
 Difficulty: Easy
