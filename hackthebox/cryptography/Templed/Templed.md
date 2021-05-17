@@ -1,9 +1,4 @@
 ---
-layout: post
-title: Templed
-date:   2021-02-19 13:46:56 -0600
-categories: HackTheBox crypto
-
 Title: Templed
 Date:   2021-02-19
 Category: Crypto
