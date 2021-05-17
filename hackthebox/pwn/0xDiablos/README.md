@@ -1,8 +1,8 @@
 ---
-layout: post
-title: You know 0xDiablos
-date:   2021-02-19 13:46:56 -0600
-categories: HackTheBox pwn
+Title: You know 0xDiablos
+Date:   2021-02-19
+Category: Pwn
+Difficulty: Easy
 ---
 
 Category: Pwn
