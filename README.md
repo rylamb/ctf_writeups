@@ -1,7 +1,7 @@
 # HackTheBox Writeups
 ## Binary Exploitation (Pwn)
 * Easy
-  * [You know 0xDiablos](./hackthebox/pwn/0xDiablos/You Know 0xDiablos.md)
+  * [You know 0xDiablos](./hackthebox/pwn/0xDiablos/You_Know_0xDiablos.md)
   * [Jeeves](./hackthebox/pwn/jeeves.md)
 ## Cryptography
 * Easy
