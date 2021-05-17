@@ -3,14 +3,8 @@ Title: You know 0xDiablos
 Date:   2021-02-19
 Category: Pwn
 Difficulty: Easy
----
-
-Category: Pwn
-
-Difficulty: Easy
-
 Challenge Creator: RET2pwn
-
+---
 
 **Analysis of Protections**
 
