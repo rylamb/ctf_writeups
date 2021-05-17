@@ -1,15 +1,10 @@
 ---
-layout: post
-title: HackTheBox - Weak RSA (Crypto) (Retired Challenge)
-date: 2021-04-02
-categories: HackTheBox crypto
----
-
-Category: Cryptography
-
+Title: Weak RSA
+Date:   2021-04-02
+Category: Crypto
 Difficulty: Easy
-
 Challenge Creator: tomtoump
+---
 
 ## Overview
 
