@@ -1,51 +1,46 @@
 ---
-layout: post
-title: BabyRE
-date:   2021-02-23 13:46:56 -0600
-categories: HackTheBox reversing
----
-
-Category: Reverse Engineer
-
+Title: BabyRE
+Date:   2021-02-23
+Category: Reversing
 Difficulty: Easy
-
 Challenge Creator: Xh4H
+---
 
 **Challenge Description:**&quot;Show us your basic skills! (P.S. There are 4 ways to solve this, are you willing to try them all?)&quot;
 
 Download and unzip the archive to retrieve the file. Analyzing with the `file` command show that this is a Linux executable.
 
-![image1]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture1.png)
+![image1](./images/Picture1.png)
 
 If we make the file executable with `chmod +x` and run it, it asks for a key to be inserted. Simply hitting enter gives us the message &quot;Try again later.&quot;
 
-![image2]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture2.png)
+![image2](./images/Picture2.png)
 
-## **The Easy Way**
+## The Easy Way
 
 Running `hexdump -C` shows the readable contents of the file.
 
-![image3]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture3.png)
+![image3](./images/Picture3.png)
 
-![image4]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture4.png)
+![image4](./images/Picture4.png)
 
 Within the contents of the file is what appears to be a flag that is not quite properly formatted, a note saying, &quot;Don&#39;t run `strings` on this challenge, that is not the way!!!!&quot;. There are also the messages &quot;Insert key&quot; and &quot;Try again later&quot; with the value &quot;abcde122313&quot; nested between. We can try entering that as the key. Naturally we could have found the same information using `strings`.
 
-## **The Harder Way**
+## The Harder Way
 
 We can take a closer look at how the flag is being created by using radare2, analyzing the file with `aaa`, then disassembling main.
 
-![image5]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture5.png)
+![image5](./images/Picture5.png)
 
-![image6]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture6.png)
+![image6](./images/Picture6.png)
 
 The important pieces here are the variables on the stack…
 
-![image7]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture7.png)
+![image7](./images/Picture7.png)
 
 …and what looks to be flag construction and output.
 
-![image8]({{site.baseurl}}/writeups/hackthebox/reversing/BabyRE/images/Picture8.png)
+![image8](./images/Picture8.png)
 
 The break down of the code is as follows:
 
@@ -60,7 +55,7 @@ The break down of the code is as follows:
 
 To simplify, this code simply constructs the string [REDACTED] and prints it to stdout. With this information we can bypass entering the key altogether!
 
-## **Solution**
+## Solution
 
 The full writeup is locked with the flag. [See the full writeup][writeup_url]
 
