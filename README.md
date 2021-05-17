@@ -2,7 +2,7 @@
 ## Binary Exploitation (Pwn)
 * Easy
   * [You know 0xDiablos](https://johnryanlambert.github.io/writeups/hackthebox/pwn/0xDiablos/0xDiablos.html)
-  * [Jeeves](./CTF_Writeups/blob/main/hackthebox/pwn/jeeves.md)
+  * [Jeeves](./hackthebox/pwn/jeeves.md)
 ## Cryptography
 * Easy
   * [Weak RSA](https://johnryanlambert.github.io/writeups/hackthebox/cryptography/weak_rsa/weak_rsa.html)
