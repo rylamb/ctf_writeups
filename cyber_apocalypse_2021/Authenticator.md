@@ -1,17 +1,9 @@
 ---
-layout: post
-title: HTB Cyber Apocalypse 2021 - Authenticator (Reverse Engineering)
-date: 2021-04-19
-categories: HackTheBox
----
-
-Category: Reverse Engineering
-
+Title: Authenticator
+Date:   2021-04-19
+Category: Reversing
 Difficulty: 1/4 stars
-
-## Overview
-
-
+---
 
 ## File Analysis
 After downloading and extracting the file, we can begin by running `file` to better understand what this file is. The result shows that the file is a x86-64 linux unstripped executable.
