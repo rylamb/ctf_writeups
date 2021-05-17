@@ -5,7 +5,7 @@
   * [Jeeves](./hackthebox/pwn/jeeves.md)
 ## Cryptography
 * Easy
-  * [Weak RSA](https://johnryanlambert.github.io/writeups/hackthebox/cryptography/weak_rsa/weak_rsa.html)
+  * [Weak RSA](./hackthebox/cryptography/weak_rsa/weak_rsa.md)
   * [Templed](./hackthebox/cryptography/Templed/Templed.md)
 ## Reverse Engineering
 * Easy
