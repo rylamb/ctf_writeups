@@ -6,7 +6,7 @@
 ## Cryptography
 * Easy
   * [Weak RSA](https://johnryanlambert.github.io/writeups/hackthebox/cryptography/weak_rsa/weak_rsa.html)
-  * [Templed](https://johnryanlambert.github.io/writeups/hackthebox/cryptography/Templed/Templed.html)
+  * [Templed](./hackthebox/cryptography/Templed/Templed.md)
 ## Reverse Engineering
 * Easy
   * [Baby RE](https://johnryanlambert.github.io/writeups/hackthebox/reversing/BabyRE/BabyRE.html)
